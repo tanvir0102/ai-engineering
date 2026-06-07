@@ -36,5 +36,14 @@ Create three files:
 2. utils/validators.py - a function to validate email addresses.
 3. utils/constants.py - some common constants we'll use.
 
+---
+Build a complete REST API with the following endpoints:
+GET /tasks - list all tasks
+POST /tasks - Create a task
+PUT /tasks/:id - update a task
+DELETE /tasks/:id - delete a task
+
+Include error handling, input validation, and a README.
+Run it and confirm it works.
 
 

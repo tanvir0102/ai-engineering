@@ -17,10 +17,10 @@ body {
 .container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 500px;
+    padding: 30px;
 }
 
 h1 {
@@ -64,7 +64,7 @@ h1 {
 
 #addBtn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
 #addBtn:active {
@@ -79,17 +79,16 @@ h1 {
 .task-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 15px;
-    background: #f8f9fa;
-    border-left: 4px solid #667eea;
+    background: #f9f9f9;
+    border-radius: 8px;
     margin-bottom: 10px;
-    border-radius: 6px;
-    transition: all 0.3s;
+    gap: 12px;
+    transition: all 0.2s;
 }
 
 .task-item:hover {
-    background: #f0f2ff;
+    background: #f0f0f0;
     transform: translateX(5px);
 }
 
@@ -102,6 +101,13 @@ h1 {
     color: #999;
 }
 
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
 .task-text {
     flex: 1;
     color: #333;
@@ -109,48 +115,29 @@ h1 {
     word-break: break-word;
 }
 
-.task-buttons {
-    display: flex;
-    gap: 8px;
-}
-
-.toggle-btn,
 .delete-btn {
     padding: 6px 12px;
+    background: #ff6b6b;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-
-.toggle-btn {
-    background: #e8f5e9;
-    color: #2e7d32;
-}
-
-.toggle-btn:hover {
-    background: #c8e6c9;
-}
-
-.delete-btn {
-    background: #ffebee;
-    color: #c62828;
+    transition: background 0.2s;
 }
 
 .delete-btn:hover {
-    background: #ffcdd2;
+    background: #ff5252;
 }
 
-.task-counter {
+.stats {
     text-align: center;
     padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-#taskCount {
+    border-top: 2px solid #e0e0e0;
     color: #666;
     font-size: 14px;
-    font-weight: 500;
+}
+
+.stats p {
+    margin: 0;
 }
