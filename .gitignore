@@ -61,6 +61,15 @@ npm-debug.log
 yarn-error.log
 package-lock.json
 
+# Next.js
+.next/
+.turbo/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
 # Logs
 *.log
 logs/
@@ -73,6 +82,9 @@ logs/
 # IDE settings (local)
 settings.local.json
 .claude/settings.local.json
+
+# Claude Code local config
+CLAUDE.local.md
 
 # Build artifacts
 dist/

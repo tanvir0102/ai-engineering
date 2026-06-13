@@ -1,0 +1,49 @@
+https://claude.ai/public/artifacts/532827c1-ba83-42f2-b0b1-5113d7f8babe
+
+---
+Create a file called hello.txt containing the message:
+"My name is Tanvir I just set up Claude Code."
+Then tell me full path of where the file was saved.
+
+---
+Look at what's currently in this folder, then create a Python script called greet.py that:
+- Ask the user for their name
+- Print "Hello [name]! Welcome to Claude Code."
+- After creating it, run it and show me the output.
+
+---
+Create a small python script called number_facts.py that:
+1. Takes a number as a command-line argument
+2. Checks if it's prime
+3. Checks if it's a perfect square
+4. Checks If it's a Fibonacci number
+5. Prints all three results neatly formatted
+
+Then run it with the number 144 and me the output.
+Make sure it handles the case where no argument is given - Print a helpful error message.
+
+---
+I'm building a task management web app.
+Create the initial project structure with:
+- index.html (basic layout with a task list)
+- style.css (clean modern styling)
+- app.js (basic add/remove task functionality)
+Make it actually work - not just a skeleton. Keep it simple.
+
+---
+Create three files:
+1. utils/helpers.py - a utility function to format dates.
+2. utils/validators.py - a function to validate email addresses.
+3. utils/constants.py - some common constants we'll use.
+
+---
+Build a complete REST API with the following endpoints:
+GET /tasks - list all tasks
+POST /tasks - Create a task
+PUT /tasks/:id - update a task
+DELETE /tasks/:id - delete a task
+
+Include error handling, input validation, and a README.
+Run it and confirm it works.
+
+

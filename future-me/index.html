@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Me — Letters to Your Future Self</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative background blobs -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <header class="app-header">
+    <div class="logo">
+      <span class="logo-icon">🔮</span>
+      <span class="logo-text">Future Me</span>
+    </div>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle theme">
+      <span class="toggle-track">
+        <span class="toggle-thumb">
+          <span class="icon icon-sun">☀️</span>
+          <span class="icon icon-moon">🌙</span>
+        </span>
+      </span>
+    </button>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero-title">Write a letter to <span class="highlight">your future self</span></h1>
+      <p class="hero-subtitle">Capture this moment, seal it away in a time capsule, and rediscover it when the time is right.</p>
+
+      <div class="quote-box" id="quoteBox">
+        <p class="quote-text" id="quoteText">Loading inspiration...</p>
+        <p class="quote-author" id="quoteAuthor"></p>
+        <button class="quote-btn" id="newQuoteBtn" type="button">✨ New Quote</button>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="card form-card" id="formCard">
+      <h2 class="section-title">📝 Create a Time Capsule</h2>
+      <form id="capsuleForm" novalidate>
+        <div class="form-group">
+          <label for="nameInput">Your Name</label>
+          <input type="text" id="nameInput" name="name" placeholder="e.g., Alex" autocomplete="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="messageInput">Message to Future You</label>
+          <textarea id="messageInput" name="message" rows="5" placeholder="Dear future me, I hope by the time you read this..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="dateInput">Unlock Date</label>
+          <input type="date" id="dateInput" name="date" required />
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span>Seal &amp; Send to the Future</span>
+          <span class="btn-icon">🚀</span>
+        </button>
+      </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard-section">
+      <div class="dashboard-header">
+        <h2 class="section-title">📦 Your Time Capsules</h2>
+        <div class="stats">
+          <div class="stat-pill">
+            <span class="stat-value" id="totalCount">0</span>
+            <span class="stat-label">Total</span>
+          </div>
+          <div class="stat-pill locked">
+            <span class="stat-value" id="lockedCount">0</span>
+            <span class="stat-label">Locked</span>
+          </div>
+          <div class="stat-pill unlocked">
+            <span class="stat-value" id="unlockedCount">0</span>
+            <span class="stat-label">Unlocked</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="messagesContainer" class="messages-grid"></div>
+
+      <div id="emptyState" class="empty-state">
+        <div class="empty-icon">📭</div>
+        <p>No time capsules yet.</p>
+        <p class="empty-sub">Write your first message above and seal it for the future!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Made with 💜 for your future self · Your messages stay private in this browser</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
