@@ -46,6 +46,9 @@ env/
 .env
 .env.local
 .env.*.local
+# Ignore .env and .env.local in any directory or subdirectory
+**/.env
+**/.env.local
 
 # Jupyter Notebook
 .ipynb_checkpoints/
