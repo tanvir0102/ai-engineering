@@ -1,0 +1,5 @@
+[screenshot text dump]
+Traceback (most recent call last):
+  File "worker.py", line 88, in handle
+    payload = json.loads(body)
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

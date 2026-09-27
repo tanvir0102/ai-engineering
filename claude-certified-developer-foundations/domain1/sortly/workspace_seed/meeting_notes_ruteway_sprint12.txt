@@ -1,0 +1,8 @@
+RUTEWAY - SPRINT 12 PLANNING
+Date: 14 August 2026
+Present: Asha, Rohit, Meera, Sandeep
+
+- Shipment webhook retries still failing for one partner. Rohit to check.
+- Asha to split the tracking API into two services before the Diwali load test.
+- Meera raised that the staging DB has stale data from May.
+- Decision: freeze schema changes from 25 August.

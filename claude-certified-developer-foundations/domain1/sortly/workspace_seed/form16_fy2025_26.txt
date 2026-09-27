@@ -1,0 +1,9 @@
+FORM 16 - PART A (SUMMARY)
+Employer: Ruteway Logistics Pvt Ltd, Baner, Pune
+Employee: Asha Kulkarni
+PAN: XXXPK1234X
+Assessment Year: 2026-27
+
+Gross salary: Rs 11,40,000
+Deductions under Chapter VI-A: Rs 1,50,000
+Total tax deducted at source: Rs 78,400

@@ -1,0 +1,11 @@
+MUTUAL FUND SIP STATEMENT
+Folio: 88112345 / 21
+Investor: Asha Kulkarni
+Period: April 2026 - June 2026
+
+Scheme: Bluechip Equity Fund - Direct Growth
+Monthly SIP: Rs 5,000
+Instalments in period: 3
+Total invested this period: Rs 15,000
+Units allotted: 142.318
+Value as on 30 June 2026: Rs 16,240

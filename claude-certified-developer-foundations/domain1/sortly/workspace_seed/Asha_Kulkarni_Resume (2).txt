@@ -1,0 +1,22 @@
+ASHA KULKARNI
+Backend Developer | Kothrud, Pune 411038
+asha.kulkarni@example.in | +91 98xxx xxxxx
+
+SUMMARY
+Backend developer with 3 years of experience building REST APIs in Python.
+Currently at a logistics startup in Baner, Pune.
+
+SKILLS
+Python, FastAPI, PostgreSQL, Redis, Docker, Kubernetes, Git, Linux, GitHub Actions
+
+EXPERIENCE
+Backend Developer, Ruteway Logistics, Baner, Pune (2023 - present)
+  - Built the shipment tracking API serving 40,000 requests/day
+  - Cut p95 latency from 800ms to 210ms by adding Redis caching
+  - Moved 6 services to Kubernetes and set up the CI pipeline
+
+Junior Developer, Nimbus Softworks, Hinjawadi, Pune (2022 - 2023)
+  - Maintained internal billing services in Django
+
+EDUCATION
+B.E. Computer Engineering, Savitribai Phule Pune University, 2022

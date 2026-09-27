@@ -1,0 +1,6 @@
+.env
+workspace/
+sortly_memory.json
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,485 @@
+/* ---------- Base ---------- */
+:root {
+  --pink: #e88ba0;
+  --pink-dark: #d16b83;
+  --pink-light: #fdeef1;
+  --lavender: #b9a7d9;
+  --cream: #fffaf7;
+  --text-dark: #3a2e33;
+  --text-muted: #7a6b70;
+  --white: #ffffff;
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(58, 46, 51, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--cream);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--pink);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+  background-color: var(--pink-dark);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--pink);
+  color: var(--pink-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--pink-light);
+}
+
+.btn-small {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  background-color: var(--text-dark);
+  color: var(--white);
+}
+
+.btn-small:hover {
+  background-color: var(--pink-dark);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: var(--white);
+  border-bottom: 1px solid #f1e4e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.logo span {
+  color: var(--pink-dark);
+  font-weight: 400;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.nav a:hover {
+  color: var(--pink-dark);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--pink-light) 0%, #f4eefc 100%);
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 540px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  color: var(--pink-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+  color: var(--text-dark);
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bomb {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.bomb-lg {
+  width: 220px;
+  height: 220px;
+  font-size: 5rem;
+}
+
+.bomb-sm {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 70px;
+  height: 70px;
+  font-size: 1.8rem;
+  background-color: var(--lavender);
+}
+
+/* ---------- Benefits ---------- */
+.benefits {
+  padding: 70px 0;
+}
+
+.benefits .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.benefit {
+  text-align: center;
+  padding: 32px 20px;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.benefit .icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.benefit h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.benefit p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- Section titles ---------- */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 44px;
+}
+
+/* ---------- Shop ---------- */
+.shop {
+  padding: 70px 0;
+  background-color: var(--pink-light);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.product-image.lavender { background-color: #e6defa; }
+.product-image.citrus   { background-color: #ffe6c2; }
+.product-image.rose     { background-color: #fbdce4; }
+.product-image.mint     { background-color: #d9f2e4; }
+
+.product-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin-bottom: 18px;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--pink-dark);
+}
+
+/* ---------- About ---------- */
+.about {
+  padding: 80px 0;
+}
+
+.about-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-top: 18px;
+}
+
+/* ---------- Testimonials ---------- */
+.testimonials {
+  padding: 70px 0;
+  background-color: #f4eefc;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial {
+  background-color: var(--white);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.testimonial cite {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--pink-dark);
+}
+
+/* ---------- Newsletter ---------- */
+.newsletter {
+  padding: 70px 0;
+  text-align: center;
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 28px;
+  opacity: 0.9;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: none;
+  min-width: 280px;
+  font-size: 0.95rem;
+}
+
+.newsletter-form .btn-primary {
+  background-color: var(--text-dark);
+}
+
+.newsletter-form .btn-primary:hover {
+  background-color: #241c20;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 28px 0;
+  background-color: var(--text-dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #d8cdd0;
+}
+
+.footer-links a:hover {
+  color: var(--white);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  .benefits .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+MAHARASHTRA STATE ELECTRICITY DISTRIBUTION CO. LTD.
+Consumer No: 170012345678
+Billing Month: July 2026
+Address: Flat B-704, Shreeram Residency, Kothrud, Pune 411038
+
+Units consumed: 214
+Energy charges: Rs 1,842.00
+Fixed charges: Rs 128.00
+Electricity duty: Rs 289.00
+TOTAL PAYABLE: Rs 2,259.00
+Due date: 18 August 2026

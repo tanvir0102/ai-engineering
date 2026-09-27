@@ -1,0 +1,11 @@
+[project]
+name = "sortly"
+version = "1.0.0"
+description = "CCDV-F Domain 1 - Agents and Workflows - hands-on demos"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40",
+]
+
+# Part 2 and Part 4 also use the Claude Agent SDK. Add it when you reach them:
+#     uv add claude-agent-sdk

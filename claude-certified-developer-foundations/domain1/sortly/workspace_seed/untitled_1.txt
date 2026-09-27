@@ -1,0 +1,4 @@
+todo
+- call landlord about the leaking tap in the kitchen
+- renew the domain
+- ask Rohit for the staging creds
